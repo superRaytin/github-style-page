@@ -1,0 +1,37 @@
+{
+  "name": "github-style-page",
+  "version": "0.1.0",
+  "description": "Convert markdown content into HTML file with Github styles (GFW)",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superRaytin/github-style-page/issues"
+  },
+  "homepage": "https://github.com/superRaytin/github-style-page",
+  "repository": "https://github.com/superRaytin/github-style-page",
+  "keywords": [
+    "github",
+    "style",
+    "page",
+    "markdown",
+    "gfw"
+  ],
+  "author": "Leon Shi",
+  "scripts": {
+    "lint": "eslint --ext .js lib",
+    "test": "./node_modules/.bin/mocha ./test/*.js"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "marked": "~0.3.5",
+    "underscore.template": "~0.1.2"
+  },
+  "devDependencies": {
+    "should": "~6.0.1",
+    "mocha": "~2.2.4",
+    "eslint": "~1.6.0",
+    "pre-commit": "1.x"
+  }
+}
