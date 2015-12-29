@@ -18,7 +18,9 @@ describe('github-style-page', function() {
   });
 
   it('githubStylePage(path, targetDir, options, callback) works', function(done) {
-    githubStylePage(markdownFilePath, targetDir, {saveFileName: 'abc'}, function() {
+    githubStylePage(markdownFilePath, targetDir, {
+      fileName: 'abc'
+    }, function() {
       deleteTempFile && deleteFile(targetDir + 'abc.html');
       done();
     });
@@ -29,7 +31,7 @@ describe('github-style-page', function() {
 
     githubStylePage(markdownString, targetDir, {
       isContent: true,
-      saveFileName: 'abc2'
+      fileName: 'abc2'
     }, function() {
       deleteTempFile && deleteFile(targetDir + 'abc2.html');
       done();
@@ -39,7 +41,7 @@ describe('github-style-page', function() {
   it('template project works', function(done) {
     githubStylePage(markdownFilePath, targetDir, {
       template: 'project',
-      saveFileName: 'abc4',
+      fileName: 'abc4',
       vars: {
         pkg: {
           name: 'awesomeProject',
@@ -56,7 +58,7 @@ describe('github-style-page', function() {
   it('customizeTemplatePath works', function(done) {
     githubStylePage(markdownFilePath, targetDir, {
       customizeTemplatePath: targetDir + 'customTemplate.html',
-      saveFileName: 'abc3',
+      fileName: 'abc3',
       vars: {
         pkg: {
           name: 'xxxx',
