@@ -98,12 +98,14 @@ githubStylePage('## Options', 'path/to/', {
 
 A string to indicate the template will be used to render the markdown content.
 
-Available templates:
+Currently built-in templates:
 
 - **simple** the default template theme.
 - **project** NPM project style.
 
-#### project
+[View all the template files](https://github.com/superRaytin/github-style-page/tree/master/lib/template).
+
+#### `project`
 
 Below is an `project` example, note that `pkg` should be provided and at least contains `name` and `version`:
 
