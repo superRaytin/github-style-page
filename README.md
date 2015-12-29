@@ -52,7 +52,7 @@ Below is an example:
 
 ```js
 githubStylePage('path/to/example.md', 'path/to/', function() {
-    console.log('path/to/example.html finished!');
+    console.log('path/to/example.html generated!');
 });
 
 githubStylePage('path/to/example.md', null, function(html) {
@@ -117,7 +117,7 @@ githubStylePage('path/to/example.md', 'path/to/', {
         }
     }
 }, function() {
-    console.log('path/to/example.html finished!');
+    console.log('path/to/example.html generated!');
 });
 ```
 
@@ -137,7 +137,7 @@ githubStylePage('path/to/example.md', 'path/to/', {
         b: 'xxx'
     }
 }, function() {
-    console.log('path/to/example.html finished!');
+    console.log('path/to/example.html generated!');
 });
 ```
 
