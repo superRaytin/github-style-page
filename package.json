@@ -1,6 +1,6 @@
 {
   "name": "github-style-page",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert markdown content into HTML file with Github styles (GFW)",
   "main": "lib/index.js",
   "license": "MIT",
