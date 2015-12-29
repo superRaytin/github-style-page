@@ -46,6 +46,8 @@ var githubStylePage = require('github-style-page');
 - **options:** deal with some optional parameters, see [options](#options) for detail.
 - **callback:** a function to be executed when converting is complete.
 
+> Note: if `targetDir` set to null, the converted content will not be saved as a file, but will be passed to the callback.
+
 Below is an example:
 
 ```js
@@ -162,13 +164,13 @@ githubStylePage('## Options', 'path/to/', {
 });
 ```
 
-### saveFileName
+### fileName
 
-Specify the name which the converted file will be saved.
+Specify the name of the converted file will be saved.
 
 ```js
 githubStylePage('path/to/example.md', 'path/to/', {
-    saveFileName: 'readme'
+    fileName: 'readme'
 }, function() {
     console.log('path/to/readme.html generated!');
 });
