@@ -72,9 +72,27 @@ githubStylePage('## Options', 'path/to/', {
 
 ## Options
 
+### vars
+
+Template variables. Make sure that all variables used in the template where the `customizeTemplatePath` have been passed by the `vars`.
+
+### isContent
+
+Indicate that currently is a markdown string.
+
+```js
+githubStylePage('## Options', 'path/to/', {
+    isContent: true
+}, function() {
+    console.log('path/to/index.html generated!');
+});
+```
+
 ### template
 
-Available template theme:
+A string to indicate the template will be used to render the markdown content.
+
+Available templates:
 
 - **simple** the default template theme.
 - **project** NPM project style.
@@ -97,6 +115,8 @@ githubStylePage('path/to/example.md', 'path/to/', {
 });
 ```
 
+If the above templates does not meet your needs, you can customize one and add it in this list. Then create a [Pull Request](https://github.com/superRaytin/github-style-page/pulls) without hesitate.
+
 ### customizeTemplatePath
 
 Provide a customize template path to render the parsed markdown content.
@@ -115,13 +135,21 @@ githubStylePage('path/to/example.md', 'path/to/', {
 });
 ```
 
-### vars
-
-Template variables. Make sure that all variables used in the template where the `customizeTemplatePath` have been passed by the `vars`.
-
 ### markedOptions
 
 Configuration for markdown parser, see [marked#options](https://github.com/chjj/marked#options-1) for detail.
+
+Default value:
+
+```js
+{
+    gfm: true,
+    tables: true,
+    breaks: false
+}
+```
+
+Below is an example:
 
 ```js
 githubStylePage('## Options', 'path/to/', {
@@ -134,17 +162,9 @@ githubStylePage('## Options', 'path/to/', {
 });
 ```
 
-### isContent
-
-```js
-githubStylePage('## Options', 'path/to/', {
-    isContent: true
-}, function() {
-    console.log('path/to/index.html generated!');
-});
-```
-
 ### saveFileName
+
+Specify the name which the converted file will be saved.
 
 ```js
 githubStylePage('path/to/example.md', 'path/to/', {
