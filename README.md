@@ -1,5 +1,5 @@
 # github-style-page
-> Convert markdown content into HTML file with Github styles (GFW).
+> Convert markdown content into HTML file with Github styles (GFW).
 
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][npm-url]
