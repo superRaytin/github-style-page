@@ -54,6 +54,10 @@ Below is an example:
 githubStylePage('path/to/example.md', 'path/to/', function() {
     console.log('path/to/example.html finished!');
 });
+
+githubStylePage('path/to/example.md', null, function(html) {
+    console.log('converted html content:', html);
+});
 ```
 
 ### githubStylePage(markdownString, targetDir [, options], callback)
