@@ -44,7 +44,7 @@ describe('github-style-page', function() {
       fileName: 'abc4',
       vars: {
         pkg: {
-          name: 'awesomeProject',
+          name: 'github-style-page',
           version: '0.1.1'
         },
         examples: ['simple', 'complex'],
@@ -62,7 +62,7 @@ describe('github-style-page', function() {
       vars: {
         pkg: {
           name: 'xxxx',
-          version: '0.1.1.1'
+          version: '1.0.0'
         },
         examples: ['simple'],
       }
