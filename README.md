@@ -105,6 +105,14 @@ Currently built-in templates:
 
 [View all the template files](https://github.com/superRaytin/github-style-page/tree/master/lib/template).
 
+#### `simple`
+
+Screen shot:
+
+<p style="text-align: center">
+    <img src="test/screenshot-simple.png" width="850">
+</p>
+
 #### `project`
 
 Below is an `project` example, note that `pkg` should be provided and at least contains `name` and `version`:
@@ -114,14 +122,21 @@ githubStylePage('path/to/example.md', 'path/to/', {
     template: 'project',
     vars: {
         pkg: {
-            name: 'awesomeProject',
-            version: '0.1.0'
-        }
+            name: 'github-style-page',
+            version: '0.1.1'
+        },
+        examples: ['simple', 'complex']
     }
 }, function() {
     console.log('path/to/example.html generated!');
 });
 ```
+
+Screen shot:
+
+<p style="text-align: center">
+    <img src="test/screenshot-project.png" width="850">
+</p>
 
 If the above templates does not meet your needs, you can customize one and add it in this list. Then create a [Pull Request](https://github.com/superRaytin/github-style-page/pulls) without hesitate.
 
